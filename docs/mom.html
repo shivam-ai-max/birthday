@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffebef; /* Light pink */
+            margin: 0;
+        }
+
+        .message-container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #f1c40f;
+            border-radius: 10px;
+            background-color: #ffebef; /* Light pink */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 200px; /* Adjust the size as needed */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #e74c3c; /* Light red */
+            font-size: 3em;
+        }
+
+        p {
+            color: #e74c3c; /* Light red */
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <img src="cake.jpg" alt="Birthday Cake">
+        <h1>Happy Birthday, Mom!</h1>
+        <p>Wishing you a day filled with love and joy!</p>
+    </div>
+    <audio id="birthday-song" src="happy-birthday.mp3" autoplay loop></audio>
+    <script>
+        document.getElementById('birthday-song').play();
+    </script>
+</body>
+</html>
